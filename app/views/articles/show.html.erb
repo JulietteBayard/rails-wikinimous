@@ -1,0 +1,11 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <div style="margin: 20px;">
+  <%= link_to "Delete", article_path(@article), method: :delete %>
+  <%= link_to "Edit", edit_article_path %>
+  </div>
+  <p><%= @article.content %></p>
+
+<%= link_to "Back", articles_path%>
+</div>
+
